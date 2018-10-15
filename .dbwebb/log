@@ -9,15 +9,26 @@ test_f_validate_email (__main__.TestFunc) ... FAIL
 FAIL: test_b_analyze_text (__main__.TestFunc)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_dbwebb.py", line 45, in test_b_analyze_text
-    self.assertNotEqual(exam.analyze_text.__doc__.strip(), "Assignment 1")
-AssertionError: 'Assignment 1' == 'Assignment 1'
+  File ".dbwebb/test_dbwebb.py", line 53, in test_b_analyze_text
+    self.assertEqual(list_data, ['6', '5', '5', '21', '8', '1', 'Not an option!'])
+AssertionError: Lists differ: [''] != ['6', '5', '5', '21', '8', '1', 'Not an option!']
+
+First differing element 0:
+''
+'6'
+
+Second list contains 6 additional elements.
+First extra element 1:
+'5'
+
+- ['']
++ ['6', '5', '5', '21', '8', '1', 'Not an option!']
 
 ======================================================================
 FAIL: test_c_verify_hex (__main__.TestFunc)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_dbwebb.py", line 60, in test_c_verify_hex
+  File ".dbwebb/test_dbwebb.py", line 60, in test_c_verify_hex
     self.assertNotEqual(exam.verify_hex.__doc__.strip(), "Assignment 2")
 AssertionError: 'Assignment 2' == 'Assignment 2'
 
@@ -25,7 +36,7 @@ AssertionError: 'Assignment 2' == 'Assignment 2'
 FAIL: test_d_find_duplicates (__main__.TestFunc)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_dbwebb.py", line 75, in test_d_find_duplicates
+  File ".dbwebb/test_dbwebb.py", line 75, in test_d_find_duplicates
     self.assertNotEqual(exam.find_duplicates.__doc__.strip(), "Assignment 3")
 AssertionError: 'Assignment 3' == 'Assignment 3'
 
@@ -33,7 +44,7 @@ AssertionError: 'Assignment 3' == 'Assignment 3'
 FAIL: test_e_types (__main__.TestFunc)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_dbwebb.py", line 91, in test_e_types
+  File ".dbwebb/test_dbwebb.py", line 91, in test_e_types
     self.assertNotEqual(exam.types.__doc__.strip(), "Assignment 4")
 AssertionError: 'Assignment 4' == 'Assignment 4'
 
@@ -41,7 +52,7 @@ AssertionError: 'Assignment 4' == 'Assignment 4'
 FAIL: test_f_validate_email (__main__.TestFunc)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_dbwebb.py", line 110, in test_f_validate_email
+  File ".dbwebb/test_dbwebb.py", line 110, in test_f_validate_email
     self.assertNotEqual(exam.validate_email.__doc__.strip(), "Assignment 5")
 AssertionError: 'Assignment 5' == 'Assignment 5'
 

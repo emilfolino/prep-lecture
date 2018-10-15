@@ -22,7 +22,7 @@ cp "$PROJ_PATH/$COPY_FILE" $DBWEBB_PATH
 
 
 
-test_status="$(cd $DBWEBB_PATH && python3 test_dbwebb.py $PROJ_PATH &> $LOG_PATH)"
+test_status="$(cd $PROJ_PATH && python3 .dbwebb/test_dbwebb.py $PROJ_PATH &> $LOG_PATH)"
 
 
 

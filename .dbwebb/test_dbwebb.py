@@ -44,13 +44,13 @@ class TestFunc(unittest.TestCase):
         """
         self.assertNotEqual(exam.analyze_text.__doc__.strip(), "Assignment 1")
         self.assertIsNotNone(util.find_spec("analyze_functions"))
-        inp = ["v", "p", "u", "Gobble gobble", "q"]
+        inp = ["s", "g", "Gobble gobble", "q"]
         with patch('builtins.input', side_effect=inp):
             with patch('sys.stdout', new=StringIO()) as fake_out:
                 code = exam.analyze_text()
                 str_data = fake_out.getvalue().strip("\n")
                 list_data = str_data.split("\n")
-                self.assertEqual(list_data, ["270", "18", "20", "Not an option!"])
+                self.assertEqual(list_data, ['6', '5', '5', '21', '8', '1', 'Not an option!'])
                 self.assertTrue(code)
 
     def test_c_verify_hex(self):
