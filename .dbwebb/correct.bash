@@ -6,7 +6,7 @@ VERBOSE=true
 
 
 # Text file use by students
-COPY_FILE="manifesto.txt"
+COPY_FILE="myths.txt"
 
 
 

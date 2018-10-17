@@ -16,27 +16,8 @@ def verify_hex(hex_value):
     """
     return hex_value
 
-def find_duplicates(values):
-    """
-    Assignment 3
-    """
-    return values
 
-def types(items):
-    """
-    Assignment 4
-    """
-    return items
-
-def validate_email(email):
-    """
-    Assignment 5
-    """
-    return email
 
 if __name__ == '__main__':
     analyze_text()
     verify_hex("")
-    find_duplicates([])
-    types([])
-    validate_email("")

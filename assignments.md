@@ -40,7 +40,7 @@ Uppgifter
 1. **Analysera text**. Den här uppgiften går ut på att du ska analysera textfilen "myths.txt" på 2 olika sätt. `analyze_text` funktionen ska innehålla en while-loop som tar emot input från användaren. Loopen ska avslutas om användaren skriver "q" eller "quit", när programmet avslutas ska funktionen returnera sant, `True`.
 De två olika sätten texten ska analyseras på är:
     - Om användaren skriver "s" som input ska antalet meningar som finns i varje paragraph beräknas. Skriv ut antalet meningar som finns i de tre paragrafer som har flest meningar. Skriv ut med `print()`. Skriv enbart ut siffran sorterad från högst till lägst, ingen extra text.
-    - Om användaren skriver "g" som input ska du räkna hur många gånger gudarnas namn nämns i varje paragraf. För topp tre paragrafer skriv ut antalet gånger gudarna nämns, skrivas ut med `print()`. Skriv enbart ut siffran, sorterad från högst tilllägst, ingen extra text.
+    - Om användaren skriver "g" som input ska du räkna hur många gånger gudarnas namn nämns i varje paragraf. För topp tre paragrafer skriv ut antalet gånger gudarna nämns, skrivas ut med `print()`. Skriv enbart ut siffran, sorterad från högst tilllägst, ingen extra text. följande gudar finns i texten, "Odin,Thor,Hödur,Baldur,Tyr,Heimdall,Vidar,Vali,Loki,Frigga,Freya,Nanna,Iduna,Sif,Modi,Magni".
 
  Funktionen analyze_text ska enbart innehålla while-loopen som tar inputs och if-satsen för valen. Övriga funktioner ska ligga i en ny modul som du även ska skapa. Modulen ska heta `analyze_functions.py`, det ska finns minst en funktion för varje menyval, utom valet "q". Om användaren skriver ett ej giltigt argument ska "Not an option!" skrivas ut. Gör inga extra `print()` i din lösning förutom de som efterfrågas i kravspecifikationen. En paragraf separeras med två "\n".
 
@@ -50,23 +50,3 @@ De två olika sätten texten ska analyseras på är:
     - Strängen börjar med en brädgård '#'.
     - Strängen består sedan av 3 eller 6 hexadecimala siffror 0-f.
     - Alla bokstäver ska vara små bokstäver.<br><br>
-
-3. **Hitta dubbletter**. Fyll i funktionen `find_duplicates`, den ska ta en lista som argument och listan innehåller strängar. Hitta alla dubbletter och returnera en lista med värden som är dubbletter. I den returnerade listan ska varje dubblett endast vara med en gång. Din lösning ska vara case-insensitive, dvs. `a == A`. Listan som returneras ska vara sorterad i bokstavsordning.
-
-4. **Kolla datatyper**. Fyll i funktionen `types`, den ska ta emot en lista som argument. Den listan kan innehålla ett godtyckligt antal element av tre olika datatyper. De möjliga datatyperna är heltal, strängar och listor. Funktionen ska returnera en sträng som byggs upp av beroende på de olika elementen som finns i argumentet. Beroende på datatypen gör följande:
-    - Heltal, lägg till strängen "The square of i is x.", där "i" är heltalet och "x" är `i^2`.
-    - Sträng, lägg till strängen "The secret word is s.", där "s" är strängen.
-    - Lista, lägg till strängen "The list contains x, y, z.", där "xyz" är värden från listan. Listan kan innehålla en odefinierad mängd värden. Du kan anta att elementen är av datatypen sträng.
-    - Annan typ, om värdet är av annan typ än de ovanför, gör inget.
-
- Den returnerade strängen ska innehålla mellanrum mellan de olika strängar som har byggts ihop. Om argumentet är en tom lista ska funktionen returnera en tom sträng. Exempel på argument och resultat är följande, `[2, "hej", ["tre", "fyra", "fem"]]` --> "The square of 2 is 4. The secret word is hej. The list contains tre, fyra, fem.".
-
-5. **Validera email adresser**. Fyll i funktionen `validate_email`, den ska validera en email adress. Funktionen ska returnera sant, True, om adressen är giltig, annars falskt, False.
-
- Följande regler gäller:
-    - innehåller ett "@".
-    - det ska finnas karaktärer framför "@".
-    - efter @, ska det finnas minst en punkt, ".", och andra karaktärer framför punkten.
-    - efter den sista punkten ska det finnas 2 eller 3 karaktärer.
-    - innehåller endast karaktärerna a-z och 0-9 samt ".", "_", "-", "@".
-    - endast små bokstäver.
